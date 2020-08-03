@@ -1,0 +1,1452 @@
+{
+    "and_relate_verify_verify": {
+        "count": 91385,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "weeds (1310826)"
+            },
+            {
+                "operation": "relate",
+                "dependencies": [
+                    0
+                ],
+                "argument": "animal,in front of,s (1310811)"
+            },
+            {
+                "operation": "verify",
+                "dependencies": [
+                    1
+                ],
+                "argument": "dry"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "gray "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_select_verify_verify": {
+        "count": 144393,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "elephant (1310811)"
+            },
+            {
+                "operation": "verify",
+                "dependencies": [
+                    0
+                ],
+                "argument": "dry"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    0
+                ],
+                "argument": "gray "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    1,
+                    2
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter color_verify_verify": {
+        "count": 13539,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "plate (378556)"
+            },
+            {
+                "operation": "filter color",
+                "dependencies": [
+                    0
+                ],
+                "argument": "white"
+            },
+            {
+                "operation": "verify material",
+                "dependencies": [
+                    1
+                ],
+                "argument": "paper"
+            },
+            {
+                "operation": "verify size",
+                "dependencies": [
+                    1
+                ],
+                "argument": "small "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter material_verify_verify": {
+        "count": 8068,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "plate (378556)"
+            },
+            {
+                "operation": "filter material",
+                "dependencies": [
+                    0
+                ],
+                "argument": "wood"
+            },
+            {
+                "operation": "verify size",
+                "dependencies": [
+                    1
+                ],
+                "argument": "small"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "white "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter size_verify_verify": {
+        "count": 8877,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "appliance (931079)"
+            },
+            {
+                "operation": "filter size",
+                "dependencies": [
+                    0
+                ],
+                "argument": "large"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "black"
+            },
+            {
+                "operation": "verify material",
+                "dependencies": [
+                    1
+                ],
+                "argument": "metal "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter_verify_verify": {
+        "count": 13446,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "shirt (3146329)"
+            },
+            {
+                "operation": "filter",
+                "dependencies": [
+                    0
+                ],
+                "argument": "long sleeved"
+            },
+            {
+                "operation": "verify",
+                "dependencies": [
+                    1
+                ],
+                "argument": "bright"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "orange "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter height_verify_verify": {
+        "count": 2244,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "trees (1246663)"
+            },
+            {
+                "operation": "filter height",
+                "dependencies": [
+                    0
+                ],
+                "argument": "tall"
+            },
+            {
+                "operation": "verify",
+                "dependencies": [
+                    1
+                ],
+                "argument": "leafy"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "white "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter pose_verify_verify": {
+        "count": 2471,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "animal (447018)"
+            },
+            {
+                "operation": "filter pose",
+                "dependencies": [
+                    0
+                ],
+                "argument": "running"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "brown"
+            },
+            {
+                "operation": "verify size",
+                "dependencies": [
+                    1
+                ],
+                "argument": "small "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter weather_verify_verify": {
+        "count": 896,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "sky (1340028)"
+            },
+            {
+                "operation": "filter weather",
+                "dependencies": [
+                    0
+                ],
+                "argument": "clear"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "blue"
+            },
+            {
+                "operation": "verify",
+                "dependencies": [
+                    1
+                ],
+                "argument": "bright "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter flavor_verify_verify": {
+        "count": 151,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "plate (688519)"
+            },
+            {
+                "operation": "relate",
+                "dependencies": [
+                    0
+                ],
+                "argument": "dessert,on top of,s (688517)"
+            },
+            {
+                "operation": "filter flavor",
+                "dependencies": [
+                    1
+                ],
+                "argument": "chocolate"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    2
+                ],
+                "argument": "green"
+            },
+            {
+                "operation": "verify shape",
+                "dependencies": [
+                    2
+                ],
+                "argument": "triangular "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    3,
+                    4
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter depth_verify_verify": {
+        "count": 215,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "water (306816)"
+            },
+            {
+                "operation": "filter depth",
+                "dependencies": [
+                    0
+                ],
+                "argument": "shallow"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "brown"
+            },
+            {
+                "operation": "verify cleanliness",
+                "dependencies": [
+                    1
+                ],
+                "argument": "clean "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter width_verify_verify": {
+        "count": 572,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "road (207869)"
+            },
+            {
+                "operation": "filter width",
+                "dependencies": [
+                    0
+                ],
+                "argument": "narrow"
+            },
+            {
+                "operation": "verify cleanliness",
+                "dependencies": [
+                    1
+                ],
+                "argument": "dirty"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "yellow "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter cleanliness_verify_verify": {
+        "count": 957,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "elephant (850798)"
+            },
+            {
+                "operation": "filter cleanliness",
+                "dependencies": [
+                    0
+                ],
+                "argument": "not(clean)"
+            },
+            {
+                "operation": "verify",
+                "dependencies": [
+                    1
+                ],
+                "argument": "baby"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "gray "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter age_verify_verify": {
+        "count": 917,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "elephant (850798)"
+            },
+            {
+                "operation": "filter age",
+                "dependencies": [
+                    0
+                ],
+                "argument": "young"
+            },
+            {
+                "operation": "verify",
+                "dependencies": [
+                    1
+                ],
+                "argument": "adult"
+            },
+            {
+                "operation": "verify cleanliness",
+                "dependencies": [
+                    1
+                ],
+                "argument": "dirty "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter tone_verify_verify": {
+        "count": 438,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "animal (222360)"
+            },
+            {
+                "operation": "filter tone",
+                "dependencies": [
+                    0
+                ],
+                "argument": "light"
+            },
+            {
+                "operation": "verify size",
+                "dependencies": [
+                    1
+                ],
+                "argument": "large"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "white "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter activity_verify_verify": {
+        "count": 896,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "person (833555)"
+            },
+            {
+                "operation": "filter activity",
+                "dependencies": [
+                    0
+                ],
+                "argument": "eating"
+            },
+            {
+                "operation": "verify age",
+                "dependencies": [
+                    1
+                ],
+                "argument": "little"
+            },
+            {
+                "operation": "verify size",
+                "dependencies": [
+                    1
+                ],
+                "argument": "small "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter pattern_verify_verify": {
+        "count": 585,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "animal (1093269)"
+            },
+            {
+                "operation": "filter pattern",
+                "dependencies": [
+                    0
+                ],
+                "argument": "striped"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "black"
+            },
+            {
+                "operation": "verify cleanliness",
+                "dependencies": [
+                    1
+                ],
+                "argument": "clean "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter state_verify_verify": {
+        "count": 744,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "van (2094658)"
+            },
+            {
+                "operation": "filter state",
+                "dependencies": [
+                    0
+                ],
+                "argument": "smooth"
+            },
+            {
+                "operation": "verify size",
+                "dependencies": [
+                    1
+                ],
+                "argument": "large"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "yellow "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter sport_verify_verify": {
+        "count": 141,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "shoes (3285771)"
+            },
+            {
+                "operation": "filter sport",
+                "dependencies": [
+                    0
+                ],
+                "argument": "tennis"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "black"
+            },
+            {
+                "operation": "verify company",
+                "dependencies": [
+                    1
+                ],
+                "argument": "nike "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter length_verify_verify": {
+        "count": 2014,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "elephant (729973)"
+            },
+            {
+                "operation": "filter length",
+                "dependencies": [
+                    0
+                ],
+                "argument": "long"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "red"
+            },
+            {
+                "operation": "verify height",
+                "dependencies": [
+                    1
+                ],
+                "argument": "short "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter shape_verify_verify": {
+        "count": 1828,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "shoe (3255111)"
+            },
+            {
+                "operation": "filter shape",
+                "dependencies": [
+                    0
+                ],
+                "argument": "round"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "black"
+            },
+            {
+                "operation": "verify size",
+                "dependencies": [
+                    1
+                ],
+                "argument": "large "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter face expression_verify_verify": {
+        "count": 306,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "cat (1675814)"
+            },
+            {
+                "operation": "filter face expression",
+                "dependencies": [
+                    0
+                ],
+                "argument": "angry"
+            },
+            {
+                "operation": "verify size",
+                "dependencies": [
+                    1
+                ],
+                "argument": "large"
+            },
+            {
+                "operation": "verify length",
+                "dependencies": [
+                    1
+                ],
+                "argument": "short "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter thickness_verify_verify": {
+        "count": 457,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "table (1154863)"
+            },
+            {
+                "operation": "filter thickness",
+                "dependencies": [
+                    0
+                ],
+                "argument": "thin"
+            },
+            {
+                "operation": "verify size",
+                "dependencies": [
+                    1
+                ],
+                "argument": "small"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "white "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter fatness_verify_verify": {
+        "count": 270,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "elephant (1197218)"
+            },
+            {
+                "operation": "filter fatness",
+                "dependencies": [
+                    0
+                ],
+                "argument": "fat"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "gray"
+            },
+            {
+                "operation": "verify size",
+                "dependencies": [
+                    1
+                ],
+                "argument": "large "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter gender_verify_verify": {
+        "count": 151,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "elephant (365710)"
+            },
+            {
+                "operation": "filter gender",
+                "dependencies": [
+                    0
+                ],
+                "argument": "male"
+            },
+            {
+                "operation": "verify",
+                "dependencies": [
+                    1
+                ],
+                "argument": "baby"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "gray "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter orientation_verify_verify": {
+        "count": 70,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "bus (2955213)"
+            },
+            {
+                "operation": "filter orientation",
+                "dependencies": [
+                    0
+                ],
+                "argument": "horizontal"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "blue"
+            },
+            {
+                "operation": "verify length",
+                "dependencies": [
+                    1
+                ],
+                "argument": "long "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter liquid_verify_verify": {
+        "count": 48,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "fountain (1197896)"
+            },
+            {
+                "operation": "filter liquid",
+                "dependencies": [
+                    0
+                ],
+                "argument": "water"
+            },
+            {
+                "operation": "verify size",
+                "dependencies": [
+                    1
+                ],
+                "argument": "small"
+            },
+            {
+                "operation": "verify height",
+                "dependencies": [
+                    1
+                ],
+                "argument": "tall "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter hardness_verify_verify": {
+        "count": 105,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "table (1218343)"
+            },
+            {
+                "operation": "filter hardness",
+                "dependencies": [
+                    0
+                ],
+                "argument": "hard"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "brown"
+            },
+            {
+                "operation": "verify material",
+                "dependencies": [
+                    1
+                ],
+                "argument": "wood "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter opaqness_verify_verify": {
+        "count": 109,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "flowers (1036904)"
+            },
+            {
+                "operation": "relate",
+                "dependencies": [
+                    0
+                ],
+                "argument": "vase,of,s (1036903)"
+            },
+            {
+                "operation": "filter opaqness",
+                "dependencies": [
+                    1
+                ],
+                "argument": "clear"
+            },
+            {
+                "operation": "verify length",
+                "dependencies": [
+                    2
+                ],
+                "argument": "long"
+            },
+            {
+                "operation": "verify height",
+                "dependencies": [
+                    2
+                ],
+                "argument": "short "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    3,
+                    4
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter room_verify_verify": {
+        "count": 48,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "tiles (3043050)"
+            },
+            {
+                "operation": "filter room",
+                "dependencies": [
+                    0
+                ],
+                "argument": "bathroom"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "gray"
+            },
+            {
+                "operation": "verify size",
+                "dependencies": [
+                    1
+                ],
+                "argument": "large "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter company_verify_verify": {
+        "count": 42,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "polo shirt (228013)"
+            },
+            {
+                "operation": "filter company",
+                "dependencies": [
+                    0
+                ],
+                "argument": "not(adidas)"
+            },
+            {
+                "operation": "verify",
+                "dependencies": [
+                    1
+                ],
+                "argument": "short sleeved"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "white "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter event_verify_verify": {
+        "count": 13,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "cake (921709)"
+            },
+            {
+                "operation": "filter event",
+                "dependencies": [
+                    0
+                ],
+                "argument": "wedding"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "green"
+            },
+            {
+                "operation": "verify size",
+                "dependencies": [
+                    1
+                ],
+                "argument": "large "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter race_verify_verify": {
+        "count": 48,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "elephant (4521594)"
+            },
+            {
+                "operation": "filter race",
+                "dependencies": [
+                    0
+                ],
+                "argument": "asian"
+            },
+            {
+                "operation": "verify size",
+                "dependencies": [
+                    1
+                ],
+                "argument": "small"
+            },
+            {
+                "operation": "verify age",
+                "dependencies": [
+                    1
+                ],
+                "argument": "young "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter sportActivity_verify_verify": {
+        "count": 100,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "cat (1322606)"
+            },
+            {
+                "operation": "filter sportActivity",
+                "dependencies": [
+                    0
+                ],
+                "argument": "riding"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "gray"
+            },
+            {
+                "operation": "verify size",
+                "dependencies": [
+                    1
+                ],
+                "argument": "large "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter weight_verify_verify": {
+        "count": 61,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "train (375172)"
+            },
+            {
+                "operation": "filter weight",
+                "dependencies": [
+                    0
+                ],
+                "argument": "heavy"
+            },
+            {
+                "operation": "verify length",
+                "dependencies": [
+                    1
+                ],
+                "argument": "long"
+            },
+            {
+                "operation": "verify state",
+                "dependencies": [
+                    1
+                ],
+                "argument": "still "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter realism_verify_verify": {
+        "count": 60,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "table (881091)"
+            },
+            {
+                "operation": "filter realism",
+                "dependencies": [
+                    0
+                ],
+                "argument": "real"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "black"
+            },
+            {
+                "operation": "verify material",
+                "dependencies": [
+                    1
+                ],
+                "argument": "wood "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    },
+    "and_filter brightness_verify_verify": {
+        "count": 7,
+        "example": [
+            {
+                "operation": "select",
+                "dependencies": [],
+                "argument": "snow (567747)"
+            },
+            {
+                "operation": "filter brightness",
+                "dependencies": [
+                    0
+                ],
+                "argument": "dark"
+            },
+            {
+                "operation": "verify weight",
+                "dependencies": [
+                    1
+                ],
+                "argument": "heavy"
+            },
+            {
+                "operation": "verify color",
+                "dependencies": [
+                    1
+                ],
+                "argument": "white "
+            },
+            {
+                "operation": "and",
+                "dependencies": [
+                    2,
+                    3
+                ],
+                "argument": ""
+            }
+        ]
+    }
+}
