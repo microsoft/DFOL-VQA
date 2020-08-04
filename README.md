@@ -1,6 +1,10 @@
 # Differentiable First Order Logic Reasoning for Visual Question Answering
 
-The differentiable first order logic reasoning framework (termed as **&#8711;-FOL**) is a neuro-symbolic architecture for visual question answering (VQA) built upon formulating questions about visual scenes as first-order logic (FOL) formulas. For more technical details, please refer to our paper:
+The differentiable first order logic reasoning framework (termed as **&#8711;-FOL**) is a neuro-symbolic architecture for visual question answering (VQA) built upon formulating questions about visual scenes as first-order logic (FOL) formulas. 
+
+![The **&#8711;-FOL** Framework](framework.png)
+
+For more technical details, please refer to our paper:
 
 **Saeed Amizadeh, Hamid Palangi, Alex Polozov, Yichen Huang and Kazuhito Koishida, *Neuro-Symbolic Visual Reasoning: Disentangling “Visual” from “Reasoning”*, In Proceedings of the 37th International Conference on Machine Learning (ICML), pp. 10696--10707, Vienna, Austria, 2020. [[PDF]](https://proceedings.icml.cc/static/paper_files/icml/2020/6156-Paper.pdf) [[Supplement]](https://proceedings.icml.cc/static/paper_files/icml/2020/6156-Supplemental.pdf) [[Video]](https://icml.cc/virtual/2020/poster/6760) [[bib]](https://proceedings.icml.cc/static/paper_files/icml/2020/6156-Bibtex.bib)**
 
@@ -55,7 +59,7 @@ Since the **-b** option is deployed, the preprocessed data is also generated in 
 
 ## Preparing the Config YAML
 
-The config YAML file contains all the hyper-parameters and global variables required for training/testing a **&#8711;-FOL** model and should be prepared beforehand as such. A sample config file is provided [here](https://github.com/microsoft/DFOL-VQA/config/sample_config.yaml). For the complete list of hyper-parameters and their descriptions, please see [here](https://github.com/microsoft/DFOL-VQA/CONFIG_YAML.md).
+The config YAML file contains all the hyper-parameters and global variables required for training/testing a **&#8711;-FOL** model and should be prepared beforehand as such. A sample config file is provided [here](https://github.com/microsoft/DFOL-VQA/blob/main/config/sample_config.yaml). For the complete list of hyper-parameters and their descriptions, please see [here](https://github.com/microsoft/DFOL-VQA/blob/main/CONFIG_YAML.md).
 
 # Running the **&#8711;-FOL** Framework
 
