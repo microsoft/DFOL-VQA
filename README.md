@@ -1,6 +1,6 @@
 # Differentiable First Order Logic Reasoning for Visual Question Answering
 
-The differentiable first order logic reasoning framework (termed as $\nabla$-FOL) is a neuro-symbolic architecture for visual question answering (VQA) built upon formulating questions about visual scenes as first-order logic (FOL) formulas. For more technical details, please refer to our paper:
+The differentiable first order logic reasoning framework (termed as &#8711;-FOL) is a neuro-symbolic architecture for visual question answering (VQA) built upon formulating questions about visual scenes as first-order logic (FOL) formulas. For more technical details, please refer to our paper:
 
 **Saeed Amizadeh, Hamid Palangi, Alex Polozov, Yichen Huang and Kazuhito Koishida, *Neuro-Symbolic Visual Reasoning: Disentangling “Visual” from “Reasoning”*, In Proceedings of the 37th International Conference on Machine Learning (ICML), pp. 10696--10707, Vienna, Austria, 2020. [[PDF]](https://proceedings.icml.cc/static/paper_files/icml/2020/6156-Paper.pdf) [[Supplement]](https://proceedings.icml.cc/static/paper_files/icml/2020/6156-Supplemental.pdf) [[Video]](https://icml.cc/virtual/2020/poster/6760) [[bib]](https://proceedings.icml.cc/static/paper_files/icml/2020/6156-Bibtex.bib)**
 
@@ -21,7 +21,7 @@ If you are using this code for your research/publication purposes, please make s
 ## Prerequisites
 
 * Python 3.6 or higher.
-* PyTorch 1.4.0 or higher.
+* PyTorch 1.3.0 or higher.
 
 Run:
 
@@ -49,7 +49,11 @@ Run:
 
    The output preprocessed files appear in a sub-directory with the same name as the input file except that it is prefixed by 'p_'. 
    Since the **-b** option is deployed, the preprocessed data is also generated in the HDF5 format (the corresponding sub-directory is prefixed by 'h5_').\
-   **Note that the training config file needs to point to 'h5_' directories for efficient data loading.** 
+   **Note that the training config file needs to point to 'h5_' directories for efficient data loading.**
+
+## The Config YAML Preparation
+
+The config YAML file contains all the hyper-parameters and global variables required for training/testing a &#8711;-FOL model and should be prepared beforehand as such. A sample config file is provided here; for the complete list of hyper-parameters and their descriptions, please see here.
 
 # Main Contributors
 
