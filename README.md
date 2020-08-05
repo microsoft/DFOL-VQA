@@ -27,11 +27,9 @@ If you are using this code for any research/publication purposes, please make su
 * Python 3.6 or higher.
 * PyTorch 1.3.0 or higher.
 
-Run:
+After installing the prerequisites, run:
 
-```
-> python setup.py
-```
+`> python setup.py install`
 
 # Data Preparation and Model Configuration
 

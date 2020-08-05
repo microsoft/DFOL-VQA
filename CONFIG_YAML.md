@@ -16,7 +16,7 @@
 
 + **image_path**: The path to the original GQA images (only required for visualization).
 
-+ **model_path**: The output path for the model's checkpoints.
++ **model_path**: The output path for the model's checkpoints as well as the prediction output JSON.
 
 + **attribute_file**: The absolute path to [gqa_all_attribute.json](https://github.com/microsoft/DFOL-VQA/blob/main/src/nsvqa/data/metadata/gqa_all_attribute.json).
 

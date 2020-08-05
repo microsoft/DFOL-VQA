@@ -67,15 +67,9 @@ class ExperimentBase(object):
         ontology = self.build_ontology(config, logger)
 
         # Build the trainer
-        if 'apex' in config and config['apex']:
-            from nsvqa.train.apex_trainer import ApexVQATrainer
-            if config['verbose'] and local_rank == 0:
-                logger.info("Building Apex Trainer...")
-            trainer = ApexVQATrainer(local_rank, config, logger, ontology)
-        else:
-            if config['verbose'] and local_rank == 0:
-                logger.info("Building Regular Trainer...")
-            trainer = VQATrainer(use_cuda, config, logger, ontology, hardset_path=hardset_path)
+        if config['verbose'] and local_rank == 0:
+            logger.info("Building Regular Trainer...")
+        trainer = VQATrainer(use_cuda, config, logger, ontology, hardset_path=hardset_path)
 
         # Build the model
         trainer.model = self.build_model(config, ontology, logger)
