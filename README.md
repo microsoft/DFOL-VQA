@@ -92,11 +92,11 @@ Furthermore, a trained model can be run to produce a prediction JSON file for th
 
 `> python gqa_interpreter_experiments.py path/to/config/yaml -s 0 -l best -t -v`
 
-# Main Contributors
+# Contributors
 
-+ [Saeed Amizadeh](mailto:saamizad@microsoft.com), Microsoft Inc.
-+ [Alex Polozov](mailto:Alex.Polozov@microsoft.com), Microsoft Inc.
-+ [Hamid Palangi](mailto:hpalangi@microsoft.com), Microsoft Inc.
++ [Saeed Amizadeh](mailto:saamizad@microsoft.com), [Microsoft Applied Sciences Lab](https://www.microsoft.com/applied-sciences/).
++ [Alex Polozov](mailto:Alex.Polozov@microsoft.com), [Microsoft Research AI](https://www.microsoft.com/en-us/research/lab/microsoft-research-ai/).
++ [Hamid Palangi](mailto:hpalangi@microsoft.com), [Microsoft Research AI](https://www.microsoft.com/en-us/research/lab/microsoft-research-ai/).
 
 # Contributing
 
