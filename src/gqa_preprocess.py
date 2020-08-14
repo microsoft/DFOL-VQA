@@ -396,25 +396,3 @@ if __name__ == '__main__':
             makedirs(h5_output_path)
         
         encoder.encode(output_path, h5_output_path)
-        
-    # gqap = GQAPreprocessor("E:\\Projects\\Compositional-visual-reasoning\\src\\nsvqa\\data\\metadata\\op_map.json", True)
-    
-    # gqap.preprocess("E:\\datasets\\GQA\\questions1.2\\train_all_questions", "E:\\datasets\\GQA\\p_train_questions1.2\\p_train_questions.json", True)
-    # gqap.preprocess("E:\\datasets\\GQA\\questions1.2\\val_balanced_questions.json", "E:\\datasets\\GQA\\p_val_balanced_questions1.2\\p_val_balanced_questions.json", True)
-    # gqap.preprocess("E:\\datasets\\GQA\\questions1.2\\val_all_questions.json", "E:\\datasets\\GQA\\p_val_all_questions1.2\\p_val_all_questions.json", True)
-    # gqap.preprocess("E:\\datasets\\GQA\\questions1.2\\testdev_balanced_questions.json", "E:\\datasets\\GQA\\p_testdev_balanced_questions1.2\\p_testdev_balanced_questions.json", True)
-    # gqap.preprocess("E:\\datasets\\GQA\\questions1.2\\testdev_all_questions.json", "E:\\datasets\\GQA\\p_testdev_all_questions1.2\\p_testdev_all_questions.json", True)
-    
-    # gqap = GQAPreprocessor("/Users/saeed/Projects/Compositional-visual-reasoning/src/nsvqa/data/metadata/op_map.json", True)
-    # gqap.preprocess("/Users/saeed/Datasets/GQA/questions1.2/val_balanced_questions.json", "/Users/saeed/Datasets/GQA/pp_questions1.2/pp_val_balanced_questions.json", True)
-
-    # ATTRIBUTE_PATH = "E:\\Projects\\Compositional-visual-reasoning\\src\\nsvqa\\data\\metadata\\gqa_attribute.json"
-    # CLASS_PATH = "E:\\Projects\\Compositional-visual-reasoning\\src\\nsvqa\\data\\metadata\\gqa_class_clean.json"
-    # # VOCAB_PATH = "E:\\datasets\\GQA\\testdev_balanced_vocab.json"
-    # VOCAB_PATH = "E:\\Projects\\Compositional-visual-reasoning\\src\\nsvqa\\data\\metadata\\gqa_vocab.json"
-    
-    # ontology = GQAOntology(ATTRIBUTE_PATH, CLASS_PATH, VOCAB_PATH)
-    # encoder = GQAH5Encoder(ontology)
-
-    # # encoder.encode("E:\\datasets\\GQA\\p_train_questions1.2", "E:\\datasets\\GQA\\h5_train_questions1.2")
-    # encoder.encode("E:\\datasets\\GQA\\p_testdev_balanced_questions1.2", "E:\\datasets\\GQA\\h5_testdev_balanced_questions1.2")
