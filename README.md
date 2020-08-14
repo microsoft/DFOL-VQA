@@ -6,7 +6,7 @@ The differentiable first order logic reasoning framework (termed as **&#8711;-FO
 
 For more technical details, please refer to our paper:
 
-**Saeed Amizadeh, Hamid Palangi, Alex Polozov, Yichen Huang and Kazuhito Koishida, *Neuro-Symbolic Visual Reasoning: Disentangling “Visual” from “Reasoning”*, In Proceedings of the 37th International Conference on Machine Learning (ICML), pp. 10696--10707, Vienna, Austria, 2020. [[PDF]](https://proceedings.icml.cc/static/paper_files/icml/2020/6156-Paper.pdf) [[Supplement]](https://proceedings.icml.cc/static/paper_files/icml/2020/6156-Supplemental.pdf) [[Video]](https://icml.cc/virtual/2020/poster/6760) [[bib]](https://proceedings.icml.cc/static/paper_files/icml/2020/6156-Bibtex.bib) [[Slides]](https://icml.cc/media/Slides/icml/2020/virtual(no-parent)-15-19-00UTC-6760-neuro-symbolic_.pdf)**
+**Saeed Amizadeh, Hamid Palangi, Alex Polozov, Yichen Huang and Kazuhito Koishida, *Neuro-Symbolic Visual Reasoning: Disentangling “Visual” from “Reasoning”*, In Proceedings of the 37th International Conference on Machine Learning (ICML), pp. 10696--10707, Vienna, Austria, 2020. [[PDF]](https://proceedings.icml.cc/static/paper_files/icml/2020/6156-Paper.pdf) [[Supplement]](https://proceedings.icml.cc/static/paper_files/icml/2020/6156-Supplemental.pdf) [[Video]](https://icml.cc/virtual/2020/poster/6760) [[Slides]](https://icml.cc/media/Slides/icml/2020/virtual(no-parent)-15-19-00UTC-6760-neuro-symbolic_.pdf) [[bib]](https://proceedings.icml.cc/static/paper_files/icml/2020/6156-Bibtex.bib)**
 
 If you are using this code for any research/publication purposes, please make sure to cite our paper:
 
