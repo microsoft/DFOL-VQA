@@ -11,12 +11,12 @@ For more technical details, please refer to our paper:
 If you are using this code for any research/publication purposes, please make sure to cite our paper:
 
 ```
-@incollection{icml2020_6156,
- author = {Amizadeh, Saeed and Palangi, Hamid and Polozov, Oleksandr and Huang, Yichen and Koishida, Kazuhito},
- booktitle = {Proceedings of the 37th International Conference on Machine Learning (ICML-2020)},
- pages = {10696--10707},
- title = {Neuro-Symbolic Visual Reasoning: Disentangling "Visual" from "Reasoning"},
- year = {2020}
+@incollection{dfol_vqa_icml2020,
+  author = {Amizadeh, Saeed and Palangi, Hamid and Polozov, Oleksandr and Huang, Yichen and Koishida, Kazuhito},
+  booktitle = {Proceedings of the 37th International Conference on Machine Learning ({ICML-2020})},
+  pages = {10696--10707},
+  title = {Neuro-Symbolic Visual Reasoning: Disentangling ``Visual'' from ``Reasoning''},
+  year = {2020}
 }
 ```
 
