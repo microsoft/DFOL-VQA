@@ -162,9 +162,11 @@ class BatchGQABoxFeaturesCollator(ProgramCollaterBase):
             relations = np.zeros((len(image_idx), self._max_relation_per_image, self._relation_feature_dim))
             pair_indices = np.zeros((len(image_idx), self._max_relation_per_image, 2))
 
+            object_nums_cum_sum = np.array(object_nums, dtype=np.int64).cumsum()
+
             for j, (chunck_id, offset) in enumerate(zip(image_chk, image_idx)):
                 relations[j, :, :] = self._file_handles[chunck_id]['relation_features'][offset, :, :]
-                pair_indices[j, :, :] = self._file_handles[chunck_id]['relation_indices'][offset, :, :] + (object_nums[j - 1] if j > 0 else 0)
+                pair_indices[j, :, :] = self._file_handles[chunck_id]['relation_indices'][offset, :, :] + (object_nums_cum_sum[j - 1] if j > 0 else 0)
 
             relations = relations.reshape((-1, self._relation_feature_dim))
             pair_indices = pair_indices.reshape((-1, 2))
