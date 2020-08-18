@@ -583,7 +583,7 @@ class RelateBatch(BatchOperatorBase):
             object_variable_set.object_num(), predicate_num, quantifiers=quantifier, 
             log_attention=log_attention_posterior[:, 1, :], batch_object_map=object_variable_set._batch_object_map,
             predicate_question_map=predicate_question_map, base_cumulative_loss=subject_variable_set.cumulative_loss() + object_variable_set.cumulative_loss(),
-            prev_variable_sets_num=subject_variable_set._prev_variable_sets_num + object_variable_set._prev_variable_sets_num + 1)
+            prev_variable_sets_num=subject_variable_set._prev_variable_sets_num + object_variable_set._prev_variable_sets_num + 1).to(object_variable_set.dtype)
         
         if op_id in self._subject_modulations:
             new_subject_set = new_subject_set.apply_modulations(self._subject_modulations[op_id], subject_variable_set, predicate_question_map).to(subject_variable_set.dtype)
