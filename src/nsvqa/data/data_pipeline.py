@@ -899,29 +899,3 @@ class GQADataManager(object):
 
         return data_loader
         
-
-if __name__ == '__main__':
-    collater = ProgramCollaterBase('select', 'relate', 'filter')
-    
-    dataset = ProgramDataset(r'E:\datasets\GQA\p_questions1.2\ppp_val_balanced_questions_choose_attr.json')
-    # dataset = ProgramDataset(r'/Users/saeed/Datasets/GQA/p_questions1.2/pp_val_balanced_questions_and.json')
-
-    data_loader = data.DataLoader(
-        dataset=dataset,
-        batch_size=100,
-        shuffle=False,
-        num_workers=1,
-        collate_fn=collater.collate)
-
-    # # data_manager = GQADataManager(r'E:\datasets\GQA\p_questions1.2')
-    # data_manager = GQADataManager('/Users/saeed/Datasets/GQA/p_questions1.2')
-    # data_loader = data_manager.get_loader(5, collater, 0, False)
-    # device = torch.device('cpu')
-
-    for i, data in enumerate(data_loader):
-        if i > 0:
-            break
-        
-        data.create_sparse_tensors()
-        # data = data.to_cuda(device, True)
-        print(data)

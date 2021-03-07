@@ -1,0 +1,66 @@
+model_name: "classifier-direct-ll"
+version: "curriculum_6"
+
+train_path: "/path/to/GQA/h5_train_all_cur_4"
+train_object_path: "/path/to/GQA/allImages/objects"
+train_object_info_path: "/path/to/GQA/allImages/objects/gqa_objects_info.json"
+validation_path: "/path/to/GQA/h5_validation_cur_4"
+test_path: "/path/to/GQA/h5_test_cur_4"
+image_path: "/path/to/GQA/allImages/images"
+
+model_path: "/path/to/Trained-models/GQA"
+
+attribute_file: "./DFOL_VQA/src/nsvqa/data/metadata/gqa_all_attribute.json"
+class_file: "./DFOL_VQA/src/nsvqa/data/metadata/gqa_all_class.json"
+relation_file: "./DFOL_VQA/src/nsvqa/data/metadata/gqa_relation.json"
+word_embedding_file: "/path/to/Glove/glove.42B.300d.txt"
+vocabulary_file: "./DFOL_VQA/src/nsvqa/data/metadata/gqa_vocab.json"
+h5_prefix: "gqa_objects"
+h5_chunk_num: 16
+
+repetition_num: 1
+epoch_num: 500
+
+error_dim: 1
+metric_index: 0
+
+train_batch_size: 80
+test_batch_size: 80
+learning_rate: 0.0001
+weight_decay: 0.0000000001
+dropout: 0.1
+clip_norm: 0.65
+
+verbose: true
+max_cache_size: 100000
+
+box_features_dim: 2048
+oracle_input_dim: 512
+oracle_output_dim: 1
+word_embedding_dim: 300
+
+classifier_oracle: True
+featurizer_layers_config: []
+attribute_network_layers_config: [256]
+relation_network_layers_config: [256]
+operator_layers_config: []
+normalize_oracle: True
+
+freeze_featurizer: True
+freeze_attribute_network: True
+freeze_relation_network: True
+freeze_embedding_network: True
+
+activate_attention_transfer: True
+attention_transfer_state_dim: 50
+freeze_attention_network: False
+
+trainable_gate: False
+likelihood_threshold: 0
+hard_mode: False
+
+# cpu_cores_num: 4
+in_memory: true
+gpu_num: 4
+ckeckpointing_frequency: 1000
+first_answer: False

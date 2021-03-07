@@ -592,7 +592,6 @@ class VQATrainer(object):
                         im = self._draw_boxes(im, bboxes, alpha)
                         cv2.imshow(question, im)
                     
-                    # cv2.imwrite(os.path.join('/home/saeed/datasets/GQA/output', d._meta_data['image_ids'][j]) + str(i) + '.jpg', im)
                     cv2.waitKey(0)
                     cv2.destroyAllWindows()
 

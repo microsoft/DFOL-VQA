@@ -74,6 +74,31 @@ The **-s** option specifies the random seed. The model parameters are initialize
 
 Once the training is over, the test loop is performed on the specified test split.
 
+### Curriculum Training
+
+In order to replicate the trained models reported in the paper, we recommend adopting the curriculum training strategy we have used to train our models. The basic philosophy behind this strategy is since it is a challenging optimization task to train a &#8711;-FOL model from scratch over the entire GQA dataset, one should start the training with simpler questions (i.e. shorter and/or binary questions) and gradually add harder ones (i.e. longer and/or open questions) to the training dataset over a course of multiple curriculums. In doing so, one initiates the model weights at the begining of each curriculum with the weights of the best model (with lowest validation error) from the previous curriculum. This can be done by first duplicating the model checkpoints from the previous curriculum, renaming the duplicate directory to the current curriculum checkpoint and finally deploying the **-l best** option when running the training for the current curriculum.
+
+Before starting the curriculum training, you need to divide the preprocessed *Train-All* and *Train-Balanced* datasets based on the question length. This can be achieved by deploying the **-l** option in the preprocessing script:
+
+`> python gqa_preprocess.py .../GQA/questions1.2/train_balanced_questions .../GQA/p_train_balanced_questions/p_train_balanced_questions.json -b -g -l`\
+`> python gqa_preprocess.py .../GQA/questions1.2/train_all_questions .../GQA/p_train_all_questions/p_train_all_questions.json -b -g -l`
+
+The length-segregated subsets' filenames are suffixed by the length of the questions in that subset (e.g. "p_train_all_question_exist_1.h5" would refer to all questions of length 1 from *Train-All* set that end with the *exist* operator). Once both length-segregated and the original *Train-All* and *Train-Balanced* datasets are ready, we perform the curriculum training as follows:
+
+- **Curriculum 0**: Train a randomly-initialized model on the {*exist*} subset of questions with length 1 from the *Train-All* set [See Cur 0 [config file](https://github.com/microsoft/DFOL-VQA/blob/main/config/curriculum_training/cur0_classifier-direct-ll-experiment_linux.yaml)].
+- **Curriculum 1**: Train a model initialized by the best model from curriculum 0 on the {*exist*, *verfiy_attrs*, *query_attr*, *choose_attr*} subsets of questions with length 1 from the *Train-All* set [See Cur 1 [config file](https://github.com/microsoft/DFOL-VQA/blob/main/config/curriculum_training/cur1_classifier-direct-ll-experiment_linux.yaml)].
+- **Curriculum 2**: Train a model initialized by the best model from curriculum 1 on the {*exist*, *verfiy_attrs*, *query_attr*, *choose_attr*, *choose_rel*, *verify_rel*, *and*, *or*, *two_different*, *two_same*} subsets of questions with length 1 from the *Train-All* set [See Cur 2 [config file](https://github.com/microsoft/DFOL-VQA/blob/main/config/curriculum_training/cur2_classifier-direct-ll-experiment_linux.yaml)].
+- **Curriculum 3**: Fine-tune a model initialized by the best model from curriculum 2 on the {*exist*, *verfiy_attrs*, *query_attr*, *choose_attr*, *choose_rel*, *verify_rel*, *and*, *or*, *two_different*, *two_same*, *compare*, *all_same*, *all_different*} subsets of questions with length 1 from the *Train-Balanced* set [See Cur 3 [config file](https://github.com/microsoft/DFOL-VQA/blob/main/config/curriculum_training/cur3_classifier-direct-ll-experiment_linux.yaml)].
+- **Curriculum 4**: Train a model initialized by the best model from curriculum 3 on *all* questions in the *Train-All* set (all terminal operators and all lengths) [See Cur 4 [config file](https://github.com/microsoft/DFOL-VQA/blob/main/config/curriculum_training/cur4_classifier-direct-ll-experiment_linux.yaml)].
+- **Curriculum 5**: Fine-tune a model initialized by the best model from curriculum 4 on *all* questions in the *Train-Balanced* set (all terminal operators and all lengths). By the end of this curriculum, we have our final model *without* attention calibration model [See Cur 5 [config file](https://github.com/microsoft/DFOL-VQA/blob/main/config/curriculum_training/cur5_classifier-direct-ll-experiment_linux.yaml)].
+- **Curriculum 6 (Calibration)**: Train a randomly-initialized calibrator model on the top of the best model from curriculum 5 on *all* questions in the *Train-All* set (all terminal operators and all lengths). [See Cur 6 [config file](https://github.com/microsoft/DFOL-VQA/blob/main/config/curriculum_training/cur6_classifier-direct-ll-experiment_linux.yaml)].
+- **Curriculum 7 (Calibration)**: Fine-tune the best calibrator model from curriculum 6 on the top of the best model from curriculum 5 on *all* questions in the *Train-Balanced* set (all terminal operators and all lengths). [See Cur 7 [config file](https://github.com/microsoft/DFOL-VQA/blob/main/config/curriculum_training/cur7_classifier-direct-ll-experiment_linux.yaml)].
+
+Notes:
+
+- The training curriculums are on the *Train-All* set while the fine-tuning curriculums (with smaller learning rate) are on the *Train-Balanced* set.
+- During Curriculums 0-5, we train the visual oracle of the &#8711;-FOL model, while in Curriculums 6 & 7, we only train a calibrator model with the oracle weights frozen.
+
 ## Testing
 
 The test loop can be invoked independept of training by deploying the **-t** option:
