@@ -143,7 +143,14 @@ class ClassifierOracle(OracleBase):
         return attr_output, rel_output
 
     def compute_all_log_likelihood_2(self, object_features, pair_object_features):
-        attr_output = self._embedding_network(self._attribute_network(object_features))
-        rel_output = self._embedding_network(self._relation_network(pair_object_features))[:, self._ontology._relation_index]
+        if self._embedding_network is None or self._attribute_network is None:
+            attr_output = object_features
+        else:
+            attr_output = self._embedding_network(self._attribute_network(object_features))
+
+        if self._embedding_network is None or self._relation_network is None:
+            rel_output = pair_object_features
+        else:
+            rel_output = self._embedding_network(self._relation_network(pair_object_features))[:, self._ontology._relation_index]
 
         return attr_output, rel_output

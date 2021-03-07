@@ -384,8 +384,8 @@ if __name__ == '__main__':
     gqap.preprocess(args['input_file'], join(output_path, 'p_' + input_file + '.json'), True, args['length_segregation'], discard_global=args['discard_global'])
 
     if args['h5']:
-        ATTRIBUTE_PATH = "./nsvqa/data/metadata/gqa_attribute.json"
-        CLASS_PATH = "./nsvqa/data/metadata/gqa_class_clean.json"
+        ATTRIBUTE_PATH = "./nsvqa/data/metadata/gqa_all_attribute.json"
+        CLASS_PATH = "./nsvqa/data/metadata/gqa_all_class.json"
         VOCAB_PATH = "./nsvqa/data/metadata/gqa_vocab.json"
         
         ontology = GQAOntology(ATTRIBUTE_PATH, CLASS_PATH, VOCAB_PATH)
